@@ -1,57 +1,50 @@
-baseURL = "http://example.org/"
-
-title = "eike"
-theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-paginate = 20
-canonifyurls = true
-
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
+baseurl      = "https://reimplement.tech"
+title        = "Reimplement tech"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
 
 [params]
-    author = "Eike Spang"
-    info = "Programmer"
-    description = "Eike's personal website"
-    keywords = "blog,developer"
-    avatarurl = "images/avatar.jpg"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+  # Subtitle for home
+  homeSubtitle = "A simple and beautiful blog"
 
-    footercontent = "this is the footer."
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
 
-    hidecredits = false
-    hidecopyright = false 
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
 
-    rtl = false
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
 
-    math = true
-    custom_css = ["css/custom.css"]
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
 
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/espang/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
+[languages]
+  [languages.en]
+    title = "Reimplement tech"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "hello friend ng"
+      logoHomeLink = "/"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
