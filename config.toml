@@ -26,8 +26,8 @@ disqusShortname = "yourdiscussshortname"
 
     footercontent = "this is the footer."
 
-    hidecredits = true 
-    hidecopyright = true 
+    hidecredits = false
+    hidecopyright = false 
 
     rtl = false
 
