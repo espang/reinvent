@@ -1,7 +1,7 @@
 ---
 title: "Motivation"
 date: 2020-05-15T08:26:37+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
