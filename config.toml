@@ -1,34 +1,45 @@
-title = "Reimplement tech"
-baseURL = "https://reimplement.tech"
-languageCode = "en-us"
-theme = "ananke"
-
-MetaDataFormat = "yaml"
+# Default language if you have a multi-language setup
 DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
-enableRobotsTXT = true
 
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+baseURL = "https://reimplement.tech"
+theme = "amperage"
+pygmentsUseClasses = true
+
+# Number of posts shown per page
+paginate = 10
+
+# Language sections
+[languages]
+    [languages.en]
+        contentDir = "content"
+        languageName = "English"
+        languageCode = "en"
+        title = "Reimplement tech"
+        description = "Implementing existing software!"
+        weight = 1
+
+# Menu elements
+[[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/espang"
+    weight = 10
+
+# Enable only tags taxonomy
+[taxonomies]
+    tag = "tags"
 
 [params]
-  favicon = ""
-  description = "The last theme you'll ever need. Maybe."
-  facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
-  instagram = ""
-  youtube = ""
-  github = ""
-  gitlab = ""
-  linkedin = ""
-  mastodon = ""
-  slack = ""
-  stackoverflow = ""
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
-  recent_posts_number = 2
+    themeColor = "#333" # Theme color displayed on mobile browsers
+
+    # Structured data elements
+    socialProfiles = ["https://twitter.com/example","https://www.linkedin.com/in/example/","https://github.com/example"]
+
+    alternatePageName = "Amperage example"
+    organizationLogo = "/logo.png"
+    organizationName = "Asur"
+
+    publisherName = "amperage"
+    publisherLogo = "/logo-amp-article.png"
+    publisherLogoWidth = 600
+    publisherLogoHeight = 60
